@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <header>
+
+        <div class="topnav" id="myTopnav">
+
+            <a href="index.html"><img class="logo-nav" src="./images/logo-Elise-Amar-Psychologue-large.png" alt="Logo d'Elise Amar avec son nom et sa profession"></a>
+            
+            
+            <nav class="jmenu"> 
+                <ul id="menu" class="jmenu">
+                    
+                   <label for="menu-btn" class="jm-menu-btn jm-icon-menu"></label>
+                    <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+
+                        <ul class="jm-collapse">
+                        
+                            <li class="jm-dropdown">
+                                <a href="#">Qui suis-je?<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
+                                <!-- <img  class="dropdown" src="./images/Dropdown.png"></a> -->
+                                <ul>
+                                    <li><a href="#">Thérapie</a></li>
+                                    <li><a href="#">Mes engagements</a></li>
+                                    <li><a href="#">Mon parcours</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="jm-dropdown">
+                                <a href="#">Pour qui ?<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
+                            <!-- <img  class="dropdown" src="./images/Dropdown.png"></a> -->
+                                <ul>
+                                    <li ><a href="#">Adolescent</a></li>
+                                    <li><a href="#">Thérapies individuelles</a></li>
+                                    <li><a href="#">Thérapie conjugales</a></li>
+                                    <li><a href="#">Thérapie familiales</a></li>
+                                </ul>
+                            </li>
+                    
+                                    <li class="menu"><a href="#">Le cabinet</a></li>
+                                    <li class="menu"><a href="./blog.html">Blog</a></li>
+                                    <li class="menu"><a href="./formulaire.html">Contact</a></li>
+                                    <li><a href="https://www.doctolib.fr/"><img class="logodoc bouton2" src="./images/BoutonDoctolib.png" alt="bouton doctolib pour prendre rendez-vous en ligne"></a></li>
+                        </ul>
+                </ul>
+            </nav> 
+            
+            <a class="bouton-disparait" href="https://www.doctolib.fr/"><img class="logodoc" src="./images/BoutonDoctolib.png" alt="bouton doctolib pour prendre rendez-vous en ligne"></a>
+        </div>  
+        
+    </header>   
+    
+    
+    <main>
+        
+    <div class="me-contacter">
+
+            <h2>Me contacter</h2>
+                    
+        <div id="contact">
+
+            <div class="formulaire">
+
+                <h4>Me laisser un message</h4> 
+
+                    <form action="" method="GET">
+
+                        <!--<input type="radio" name="choix" value="1">1<br>
+                        <input type="radio" name="choix" value="2">2<br>
+                        <input type="radio" name="choix" value="3">3<br>
+                        <input type="radio" name="choix" value="4">4<br>
+                        <input type="radio" name="choix" value="5">5<br>
+                        <input type="text" name="chptxt"><br> -->
+                        <label for="nom">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Nom" /> 
+
+                        <label for="firstname">Prénom</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Prénom" /><br>
+
+                        <label for="email">Adresse mail</label>
+                        <input type="email" id="email"  name="email" placeholder="Adresse mail"/><br>
+
+                        <label for="telephone">Numéro de téléphone</label>
+                        <input type="text" id="telephone" name="telephone" placeholder="Numéro de téléphone"/><br>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea><br>
+
+
+                    <p class="cgv"><input type="checkbox" name="check">Lorem ipsum dolor sit amet consectetur.<br/></p>
+
+                    <img src="./images/reCAPTCHA v2 checkbox.png"class="captcha" alt="case à cocher je ne suis pas un robot">
+        
+                    <input type="submit" class="envoyer" value="Envoyer un message">
+
+                    </form>
+
+            </div>
+
+
+            <div class="plans">
+
+                <h4>Je vous accueille à St-Malo et Dinard</h4>
+
+                <p class="phone"><img src="./images/phone-alt.png"  alt="logo téléphone"/>Tel:06 85 94 35 48 </p>
+
+                <a href="https://www.doctolib.fr/"><img class="BoutonDoctolib" src="./images/BoutonDoctolib.png" alt="bouton doctolib pour prendre rendez-vous en ligne"></a>
+
+                    <div class="saint-malo">
+                        <p class="adresse">4 rue du Pont 35400 Saint-Malo</p>
+                        <p class="jours">Les lundi, mardi, jeudi et vendredi </p>
+                        <img src="./images/Map Saint-Malo.jpg" alt="plan de Saint-Malo avec l'adresse du cabinet pointer">
+                    </div>
+                    <div class="dinard">
+                        <p class="adresse">2 rue du Tertre 35093 Dinard</p>
+                        <p class="jours">Les mercredi et un samedi sur deux</p>
+                        <img src="./images/Map Dinard.jpg" alt="plan de Dinard  avec l'adresse du cabinet pointer ">
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>  
+
+
+<footer>
+
+    <div class="a-propos">
+        <a href="index.html" id="logo-carre"><img src="./images/logo-Elise-Amar-Psychologue-carre.png" alt="logo-Elise-Amar-Psychologue"></a>
+        <div class="address">
+            <p>4 rue du Pont 35400 Saint-Malo <br>
+            2 rue du Tertre 35093 Dinard </p>
+           <a href="tel:0685943548"> Tel : 06 85 94 35 48</a>
+        </div>
+    </div>
+
+    <div class="menu1-infos">
+        <h4>Informations légales</h4>
+        <p>
+            <a href="">Mentions légales</a> <br>
+            <a href="">Politique de confidentialité</a> <br>
+            N° Siret : 128 234 972 1573 <br>
+            N° Adeli : 35 789 2467 <br>
+        </p>
+    </div>
+
+    <div class="menu2-articles">
+        <h4>Derniers articles</h4>
+        <ul>
+            <li><a href="#">Lorem ipsum dolor sit amet consexctetur.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consexctetur.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consexctetur.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consexctetur.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consexctetur.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet consexctetur.</a></li>
+
+        </ul>
+    </div>
+
+    <div class="boutons">
+        <a href="https://www.doctolib.fr/"><img class="boutondoc-footer" src="./images/BoutonDoctolib.png" alt="bouton doctolib pour prendre rendez-vous en ligne"></a>
+        <button class="bouton-footer"><a href="./formulaire.html">Me contacter</a></button>
+    </div>
+
+</footer>
+
+</div>
+</body>
+</html>
+
+
+        
+        
+        
+
