@@ -361,6 +361,7 @@ template {
     --menuderoulant:#FFFFFF;
     --Lemon-Background: rgba(186, 194, 95, 0.60);
     --No-Really-Black: #14110F;
+    --No-really-White:#FCFCFC;
     --font: #2D2D2D;
     --Medium-Grey:#3A4049;
     --Light-Grey:#E0E0E0;
@@ -375,6 +376,7 @@ margin: 0;
 }
 body {
 font-family: 'Source Sans 3', sans-serif;
+width:100%;
 }
 h1{
   margin: 0;
@@ -396,6 +398,7 @@ strong{
   position: fixed;
   top: 0;
   width: 100%;
+  height: 86px;
   gap: 50px;
   justify-content:space-around;
   align-items: center;
@@ -412,10 +415,13 @@ strong{
   border-radius: 5px 5px 0 0;
   background: var(--logodoc);
   font-family: Nunito Sans;
-  font-size: 13px;
+  font-size: 18px;
   font-style: normal;
   line-height: 40px;
   border:solid 1px var(--btn1);
+}
+.jmenu a{
+  font-size:18px;
 }
 .bouton2{/*Le deuxième bouton doctolib; invisible en desktop mais qui est visible sur la version mobile*/
   display: none;
@@ -432,14 +438,15 @@ strong{
 #hero{
   background: var(--blue-pastel);
   padding: 150px 100px 100px 100px;
+  height: 890px;
   }
 
 
 .hero-container{
-  max-width: 1440px;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+
 }
 
 .text{
@@ -452,20 +459,27 @@ strong{
 
 /* Heading 1 */
 .heading-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: "Libre Baskerville",serif;
+}
+
+#hero h1{
+  /* Large Text Regular */
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: 100px;
-}
-
-h1{
-  /* Large Text Regular */
-  font-family: "Source Sans Pro",monospace;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
   padding-top: 100px;
+
+}
+#hero p{
+  font-family: "Libre Baskerville",sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height:60px ;
+  max-width: 580px;
 }
 
 #div-button{
@@ -490,7 +504,8 @@ h1{
 }
 
 .button1-hero a{
-  color: #FFFFFF;
+  color:var(--No-really-White);
+  text-decoration: none;
 }
 
 .button2-hero{
@@ -507,6 +522,7 @@ h1{
 
 .button2-hero a{
   color: var(--btn1);
+  text-decoration: none;
 }
 
 
@@ -524,7 +540,7 @@ h1{
 
 .section-famille{
   display: flex;
-  max-width: 1440px;
+  height: 940px;
   padding: 120px;
   justify-content: center;
   align-items: flex-start;
@@ -541,10 +557,11 @@ h1{
   height: 96px;*/
   color: var(--No-Really-Black);
   font-family: Libre Baskerville;
-  font-size: 36px;
+  font-size: 42px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 500;
+  line-height:45px;
+  max-width:600px;
 }
 
 .title-image-container {
@@ -563,13 +580,23 @@ h1{
 }
 
 .text-container{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
-  max-width: 600px;
-  
+  max-width: 550px;
+}
+.text-container p{
+  font-weight: 400;
+  font-size: 24px;
+  line-height:30px ;
+}
+.text-container span{
+  font-weight: 600;
 }
 
 
@@ -577,7 +604,7 @@ h1{
 
 .section-groupe{
   display: flex;
-  max-width: 1440px;
+  height: 895px;
   padding: 120px;
   justify-content: center;
   align-items: flex-start;
@@ -593,11 +620,12 @@ h1{
   height: 96px;
   color: var(--No-Really-Black);
   font-family: Libre Baskerville;
-  font-size: 36px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  align-self: flex-start;
+  display: flex;
+  align-items: flex-end;
 }
 
 .title-image-container2 {
@@ -606,7 +634,15 @@ h1{
   align-items: center;
   gap: 120px;
   align-self: stretch;
-  flex-direction: row-reverse;
+}
+.section-groupe p{
+  font-weight: 400;
+  font-size: 24px;
+  line-height:30px ;
+  max-width: 550px;
+}
+.section-groupe span{
+  font-weight: 600;
 }
 
 .section-groupe img{
@@ -620,16 +656,19 @@ h1{
 
 .accent-text{
   display: flex;
-  padding: 96px 120px;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  align-self: stretch;
+  padding: 96px 120px;
   background: var(--Lemon-Background);
+  height:333px;
 }
 
 .accent-text p{
-  font-size: 20px;
-  max-width: 600px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height:35px ;
+  max-width: 850px;
 }
 
 /*--------------------------------------------------------------Footer------------------------------------------*/
@@ -637,6 +676,7 @@ h1{
 
 footer{
   display: flex;
+  height:422px;
   padding: 80px 100px;
   justify-content: center;
   align-items: center;
@@ -756,6 +796,7 @@ footer{
 
 .bouton-footer a{
   color: var(--background);
+  text-decoration: none;
 }
   
 /*-----------------------------------------------------------Responsive---------------------------------------*/
